@@ -1,0 +1,14 @@
+.setting-page .close-message {
+  resize: none;
+  min-height: 150px;
+}
+
+.setting-page .general-info .email {
+  display: inline-flex;
+  width: calc(100% - 80px);
+}
+
+.security-info .devices {
+  background-color: #CCC;
+  color: black;
+}
