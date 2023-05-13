@@ -102,7 +102,7 @@ body {
   }
   .widget > h2 {
     margin-top: 0px;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
   }
   .widget > p {
     font-size: 15px;
@@ -213,6 +213,13 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.flex-column {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 /* End gride */
 
@@ -435,6 +442,12 @@ body {
 .fs-18 {
   font-size: 18px;
 }
+.fs-19 {
+  font-size: 19px;
+}
+.fs-20 {
+  font-size: 20px;
+}
 /* End font-size */
 
 /* Start Display */
@@ -503,3 +516,8 @@ body {
   -o-border-radius: 6px;
 }
 /* End BTN */
+
+/* Cursor Pointer */
+.pointer {
+  cursor: pointer;
+}

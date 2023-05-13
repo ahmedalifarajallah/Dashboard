@@ -86,8 +86,9 @@
         </div>
         <!-- End Head -->
         <h1 class="page-title">Settings</h1>
-        <div class="setting-page">
+        <div class="setting-page mb-20">
           <div class="wrapper">
+            <!-- Start site-Control-widget -->
             <div class="site-control widget">
               <h2>Site Control</h2>
               <p>Control The Website If There Is MainTenance</p>
@@ -105,6 +106,9 @@
               </div>
               <textarea class="close-message p-10 b-none w-full d-block b-ccc rad-6" placeholder="Close message content"></textarea>
             </div>
+            <!-- End site-control-Widget -->
+
+            <!-- Start general-info-widget -->
             <div class="general-info widget">
               <h2>General Info</h2>
               <p>General Information About Your Account</p>
@@ -122,18 +126,21 @@
                 <a href="#" class="c-blue">Change</a>
               </div>
             </div>
+            <!-- End general-info-widget -->
+            
+            <!-- Start security-Info-widget -->
             <div class="security-info widget">
               <h2>Security Info</h2>
               <p>Security Information About Your Account</p>
-              <div class="mb-15 flex-between">
+              <div class="sec-row mb-15 flex-between pb-10">
                 <div>
                   <span class="d-block">Password</span>
                   <p class="c-grey fs-13 mt-5">Last Change On 25/10/2021</p>
                 </div>
-                <a class="d-block btn-shape" href="#">Change</a>
+                <a class="d-block btn-shape sec-btn" href="#">Change</a>
               </div>
 
-              <div class="mb-15 mt-15 flex-between">
+              <div class="sec-row mb-15 flex-between pb-10">
                 <div>
                   <span class="d-block">Two-Factor Authentication</span>
                   <p class="c-grey fs-13 mt-10">Enable/Disable the Feature</p>
@@ -144,14 +151,109 @@
                 </label></div>
               </div>
 
-              <div class="sec-box mb-15 flex-between">
-                <div class="">
+              <div class="sec-row mb-15 flex-between pb-10">
+                <div>
                   <span class="d-block">Devices</span>
                   <p class="c-grey fs-13 mt-10">Check The Login Devices List</p>
                 </div>
                 <div><a class="btn-shape c-black bg-eee">Devices</a></div>
               </div>
             </div>
+            <!-- End security-Info-widget -->
+
+            <!-- Start Social-Info-widget -->
+            <div class="social-info widget">
+              <h2>Social Info</h2>
+              <p>Social Media Information</p>
+              <div class="labels">
+                <div class="label mb-15 border-ccc rad-6">
+                  <div class="icon flex-center mr-10"><i class="fs-20 fa-brands fa-twitter"></i></div>
+                  <div class="username"><p class="fs-14">Twitter Username</p></div>
+                </div>
+                <div class="label mb-15 border-ccc rad-6">
+                  <div class="icon flex-center mr-10"><i class="fa-brands fa-facebook-f"></i></div>
+                  <div class="username"><p class="fs-14">Facebook Username</p></div>
+                </div>
+                <div class="label mb-15 border-ccc rad-6">
+                  <div class="icon flex-center mr-10"><i class="fs-20 fa-brands fa-youtube"></i></div>
+                  <div class="username"><p class="fs-14">Linkedin Username</p></div>
+                </div>
+                <div class="label mb-15 border-ccc rad-6">
+                  <div class="icon flex-center mr-10"><i class="fs-20 fa-brands fa-linkedin-in"></i></div>
+                  <div class="username"><p class="fs-14">Youtube Username</p></div>
+                </div>
+              </div>
+            </div>
+            <!-- End Social-Info-widget -->
+
+            <!-- Start widget-control-widget -->
+            <div class="widget-control widget">
+              <h2>Widget Control</h2>
+              <p>Show/Hide Controls</p>
+              <div class="controls">
+                <div class="mb-15">
+                  <input type="checkbox" id="draft" checked>
+                  <label class="pointer fs-16" for="draft">Quick Draft</label>
+                </div>
+                <div class="mb-15">
+                  <input type="checkbox" id="targets" checked>
+                  <label class="pointer fs-16" for="targets">Yearly Targets</label>
+                </div>
+                <div class="mb-15">
+                  <input type="checkbox" id="tickets" checked>
+                  <label class="pointer fs-16" for="tickets">Tickets Statistics</label>
+                </div>
+                <div class="mb-15">
+                  <input type="checkbox" id="news" checked>
+                  <label class="pointer fs-16" for="news">Latest News</label>
+                </div>
+                <div class="mb-15">
+                  <input type="checkbox" id="tasks">
+                  <label class="pointer fs-16" for="tasks">Latest Tasks</label>
+                </div>
+                <div class="mb-15">
+                  <input type="checkbox" id="topsearch" checked>
+                  <label class="pointer fs-16" for="topsearch">Top Search items</label>
+                </div>
+              </div>
+            </div>
+            <!-- End widget-control-widget -->
+
+            <!-- Start Backup-Manger-widget -->
+            <div class="backup-manger widget">
+              <h2>Backup Manger</h2>
+              <p>Control Backup Time And Location</p>
+              <div class="backup-times">
+                <div class="mb-15">
+                  <input type="radio" id="daily" checked>
+                  <label class="pointer" for="daily">Daily</label>
+                </div>
+                <div class="mb-15">
+                  <input type="radio" id="weekly">
+                  <label class="pointer" for="weekly">Weekly</label>
+                </div>
+                <div class="mb-15">
+                  <input type="radio" id="monthly">
+                  <label class="pointer" for="monthly">Monthly</label>
+                </div>
+              </div>
+              <div class="backup-size flex-center pt-20">
+                <div class="plan-card flex-column b-ccc rad-6 pt-5 pb-5 pr-10 pl-10 mr-20">
+                  <i class="mt-10 fs-20 fa-regular fa-hard-drive"></i>
+                  <p class="mb-10 mt-10">Megaman</p>
+                </div>
+                <div class="active plan-card flex-column b-ccc rad-6 pt-5 pb-5 pr-10 pl-10 mr-20">
+                  <i class="mt-10 fs-20 fa-regular fa-hard-drive"></i>
+                  <p class="mb-10 mt-10">Zero</p>
+                </div>
+                <div class="plan-card flex-column b-ccc rad-6 pt-50 pb-5 pr-10 pl-10">
+                  <i class="mt-10 fs-20 fa-regular fa-hard-drive"></i>
+                  <p class="mb-10 mt-10">Sigma</p>
+                </div>
+              </div>
+            </div>
+            <!-- End Backup-Manger-widget -->
+
           </div>
         </div>
       </div>

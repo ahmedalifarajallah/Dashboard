@@ -8,7 +8,58 @@
   width: calc(100% - 80px);
 }
 
+/* Start Security-info-Widget */
+.security-info .sec-row:not(:last-child) {
+  border-bottom: 1px solid #ccc;
+}
+
+.security-info .sec-row .sec-btn {
+  margin: 0 !important;
+}
+
 .security-info .devices {
   background-color: #CCC;
   color: black;
 }
+/* End Security-info-Widget */
+
+/* Start Social-Info-Widget */
+.social-info .labels .label {
+  display: flex;
+  background-color: #eee;
+}
+
+.social-info .labels .label .icon {
+  border-right: 1px solid  #ccc;
+  width: 40px;
+}
+
+.social-info .labels .label .icon i {
+  color: #9e9e9e;
+}
+
+.social-info .labels .label .username p {
+  text-align: start;
+  color: #9e9e9e;
+}
+/* End Social-Info-Widget */
+
+/* Start Backup-Widget */
+.backup-manger .backup-size {
+  border-top: 1px solid #ccc;
+}
+
+.backup-manger .backup-size .plan-card {
+  width: calc(100% / 3);
+  cursor: pointer;
+  border-width: 2px !important;
+}
+
+.backup-manger .backup-size .plan-card.active {
+  border: 2px solid var(--blue-color);
+}
+.backup-manger .backup-size .plan-card.active i,
+.backup-manger .backup-size .plan-card.active p {
+  color: var(--blue-color);
+}
+/* End Backup-Widget */
